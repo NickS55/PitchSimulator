@@ -25,7 +25,7 @@ function loadModel(url: string) {
 export async function add_baseballs(x: number, y: number ,z:number) {
     var ball_GLTF: any, ball_mesh: any;
 
-    ball_GLTF = await loadModel('web/styles/baseball/Baseball.glb');
+    ball_GLTF = await loadModel('web/styles/baseball/baseball.glb');
     ball_mesh = ball_GLTF.scene;
     scene.add(ball_mesh);
 
