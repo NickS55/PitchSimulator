@@ -1,0 +1,21 @@
+{
+"name": "PitchSimulator",
+"version": "1.0.0",
+"description": "Simulating the flight of a pitched baseball using velocities out of the hand as well as the effects of the magnus force (other forces such as SSW not accounted for)",
+"main": "bundle.js",
+"repository": "https://github.com/NickS55/PitchSimulator.git",
+"author": "Nicholas Sadd <nicholassadd@gmail.com>",
+"license": "MIT",
+
+
+
+  "dependencies": {
+    "three": "^0.122.0",
+    "typescript": "^4.3.2",
+    "webpack": "^5.38.1"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.2.3",
+    "webpack-cli": "^4.7.2"
+  }
+}

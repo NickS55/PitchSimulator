@@ -1,0 +1,85 @@
+$cactus-color: #6DD47E;
+$text-color: #293250;
+$background: #FFD55A;
+
+$red: #E27D60;
+$green: #85DCB0;
+$orange: #E8A87C;
+$purple: #C38D9E;
+$dgreen: #41B3A3;
+//font-family: 'Open Sans', sans-serif;
+$nav-height: 48px;
+body {
+    background: white;
+    margin: 0 5%;
+    font-family: Helvetica, sans-serif;
+}
+
+nav{
+    height: $nav-height;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    position: relative;
+    border-bottom: 2px $cactus-color solid;
+    
+}
+
+.vnav{
+    float: right;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    position: fixed;
+    top: ($nav-height + 90);
+    a{
+        color: $text-color;
+        text-decoration: none;
+    }
+    a:hover{
+        color: $cactus-color;
+       
+    }
+    a:active{
+        color: blue;
+    }
+
+}
+
+  
+.bar{
+    height: $nav-height;
+    width: 100%;
+    background: white;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.logo {
+    font-family: Helvetica, sans-serif;
+    font-size: 28px;
+    color: $text-color;
+    justify-content: center;
+}
+
+.search {
+    right: 0px;
+    position: absolute;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    height: 18px;
+    text-transform: lowercase;
+    color: $text-color;
+    text-indent: 2%;
+}
+
+.main {
+    margin: 0 15%;
+    font-family: 'Times New Roman', Times, serif;
+}

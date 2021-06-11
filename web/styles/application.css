@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#RHB_view {
+  z-index: 265;
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#LHB_view {
+  z-index: 265;
+  position: absolute;
+  bottom: 2rem;
+  right: 0rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Pitcher_View {
+  z-index: 265;
+  position: absolute;
+  bottom: 4rem;
+  right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Catcher_View {
+  z-index: 265;
+  position: absolute;
+  right: 1rem;
+  bottom: 0rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.view_menu {
+  right: 3em;
+  position: fixed;
+  bottom: 2rem;
+}
+
+.sidebar {
+  top: 0px;
+  left: 0px;
+  margin: auto;
+  padding: 0, 5px;
+  width: 220px;
+  background-color: #FFD55A;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar p {
+  padding-top: 10px;
+  margin: auto;
+  width: 200px;
+}
+.sidebar label {
+  display: inline-block;
+  width: 130px;
+  font-size: 0.9em;
+}
+.sidebar input {
+  width: 70px;
+  text-align: center;
+}
+.sidebar .pitch {
+  background-color: #6DD47E;
+  padding: 5px;
+}
+
+#intro {
+  width: 200px;
+  font-size: 0.9em;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=application.css.map */
