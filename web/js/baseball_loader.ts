@@ -17,7 +17,7 @@ function loadModel(url: string) {
         // called when loading has errors
         function ( error ) {
     
-            console.log( 'An error happened' );
+            console.log( 'An error happened' + error );
     
         });
     });
