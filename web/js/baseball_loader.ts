@@ -7,7 +7,19 @@ export var baseballs_GLTF: THREE.Group;
 
 function loadModel(url: string) {
     return new Promise((resolve) => {
-        loader.load(url, function (object) { resolve(object); });
+        loader.load(url, function (object) { resolve(object); },
+        
+        function ( xhr ) {
+
+            console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+    
+        },
+        // called when loading has errors
+        function ( error ) {
+    
+            console.log( 'An error happened' );
+    
+        });
     });
 }
 export async function add_baseballs(x: number, y: number ,z:number) {
