@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { create_line } from './create_line';
+import { create_line2 } from './create_line_spin';
 
 export class Baseball {
     axisRad: number;
@@ -39,6 +40,10 @@ export class Baseball {
 
     create_tracer() {
         create_line(this.x, this.y, this.z, this.velX, this.velY, this.velZ, this.accX, this.accY, this.accZ);
+    }
+
+    create_tracer2() {
+        create_line(this.axisRad, this.rpm, 1, this.x, this.y, this.z, this.velX, this.velY, this.velZ);
     }
 
     set_axis() {
