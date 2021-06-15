@@ -78,6 +78,7 @@ import *  as spin from "./spin_dir";
       var B = 6.041
 
       LiftCoefficient = A * (1 - Math.exp(-B * (radius * rpms * efficiency / totalV)))
+      console.log("testing")
 
       var accMagnus = KConst * LiftCoefficient * totalV ** 2;
       var accMagnusX = spin.angular_momentum_x(spin_direction_radians) * accMagnus * efficiency
