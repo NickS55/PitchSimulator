@@ -10,6 +10,7 @@ export function angular_momentum_direction(radians: number ){
 }
 
 export function angular_momentum_x(radians: number) {
+    console.log(Math.cos(radians) ** 2)
     return Math.cos(radians) ** 2
 }
 
