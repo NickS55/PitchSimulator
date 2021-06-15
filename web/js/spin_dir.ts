@@ -6,7 +6,7 @@ https://www.drivelinebaseball.com/2019/09/mastering-the-axis-of-rotation-a-thoro
 */
 
 export function angular_momentum_direction(radians: number ){
-    return radians + Math.PI
+    return radians 
 }
 
 export function angular_momentum_x(radians: number) {
