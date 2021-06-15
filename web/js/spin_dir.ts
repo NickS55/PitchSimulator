@@ -15,7 +15,7 @@ export function angular_momentum_x(radians: number) {
 }
 
 export function angular_momentum_z(radians: number) {
-    return Math.sin(radians) ** 2 
+    return Math.sin(radians) ** 2 * -1
 }
 
 
