@@ -32,7 +32,7 @@ import *  as spin from "./spin_dir";
 
     //change to thick lines in future?
     const material = new LineBasicMaterial ( { 
-      color: 0xCAFD7C,
+      color: 0xa83266,
       linewidth: 1, //this does not work
       linecap: 'round',
      } );
