@@ -43,7 +43,7 @@ export class Baseball {
     }
 
     create_tracer2() {
-        create_line(this.axisRad, this.rpm, 1, this.x, this.y, this.z, this.velX, this.velY, this.velZ);
+        create_line2(this.axisRad, this.rpm, 1, this.x, this.y, this.z, this.velX, this.velY, this.velZ);
     }
 
     set_axis() {
