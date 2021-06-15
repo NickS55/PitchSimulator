@@ -5,9 +5,8 @@ https://www.drivelinebaseball.com/2019/09/mastering-the-axis-of-rotation-a-thoro
     90 degrees rotates from 1st to home 
 */
 
-export function angular_momentum_direction(degrees: number ){
-    var spinDirRadians = degrees * 0.0174533;
-    return spinDirRadians + Math.PI
+export function angular_momentum_direction(radians: number ){
+    return radians + Math.PI
 }
 
 export function angular_momentum_x(radians: number) {
