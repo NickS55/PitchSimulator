@@ -12,7 +12,7 @@ add eslint to project
 
 
 
-const fastball = new Baseball(3.42085, 2062, -0.893,  50.00, 6.917, 0.005, -125.074, -7.671, -7.709, 26.704, -2.752 );
+const fastball = new Baseball(3.14, 2062, -0.893,  50.00, 6.917, 0.005, -125.074, -7.671, -7.709, 26.704, -2.752 );
 
 fastball.create_tracer();
 fastball.create_tracer2();
