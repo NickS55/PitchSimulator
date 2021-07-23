@@ -30,7 +30,7 @@ import *  as spin from "./spin_axis";
 function create_line3(spin_axis: number, rpms: number, efficiency: number, x: number , y: number , z: number ,
     velX: number , velY: number, velZ: number) {
 
-        rpms = 0
+        
     var gravity = -32.174; // feet/second
 
     var totalVelocity = Math.sqrt(velX ** 2 + velY ** 2 + velZ ** 2)
@@ -42,7 +42,7 @@ function create_line3(spin_axis: number, rpms: number, efficiency: number, x: nu
 
     var K = .5 * (airDensity * crossSection) / ballWeight
 
-    var dragCoefficient = .33 //using .3 as Drag Coefficient, see https://www.grc.nasa.gov/www/k-12/airplane/balldrag.html
+    var dragCoefficient = .3 //using .3 as Drag Coefficient, see https://www.grc.nasa.gov/www/k-12/airplane/balldrag.html
     //real range between .2 and .5 because of drag crisis
     var drag = K * dragCoefficient
 
@@ -79,7 +79,7 @@ function create_line3(spin_axis: number, rpms: number, efficiency: number, x: nu
 
     }
 
-
+    console.log("x: " + x + "y: " + y + "z: " + z)
     points.push( new THREE.Vector3(x * multiplier, y * multiplier, z * multiplier) );
     
     const geometry = new THREE.BufferGeometry().setFromPoints( points );
