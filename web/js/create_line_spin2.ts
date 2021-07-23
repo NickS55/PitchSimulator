@@ -30,6 +30,7 @@ import *  as spin from "./spin_axis";
 function create_line3(spin_axis: number, rpms: number, efficiency: number, x: number , y: number , z: number ,
     velX: number , velY: number, velZ: number) {
 
+        rpms = 0
     var gravity = -32.174; // feet/second
 
     var totalVelocity = Math.sqrt(velX ** 2 + velY ** 2 + velZ ** 2)
