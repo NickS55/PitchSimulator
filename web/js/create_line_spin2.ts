@@ -63,7 +63,7 @@ function create_line3(spin_axis: number, rpms: number, efficiency: number, x: nu
         points.push( new THREE.Vector3(x * multiplier, y * multiplier, z * multiplier) );
 
         var xAcc = Math.cos(spin.angular_momentum_direction(spin_axis)) * magnusAccHelper * totalVelocity ** 2
-        var yAcc = - drag * totalVelocity ** 2
+        var yAcc = + drag * totalVelocity ** 2
         var zAcc = Math.sin(spin.angular_momentum_direction(spin_axis)) * magnusAccHelper * totalVelocity ** 2 - gravity
 
         velX += xAcc / deltaTime
