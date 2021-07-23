@@ -22,7 +22,7 @@ function loadModel(url: string) {
         });
     });
 }
-export async function add_baseballs(x: number, y: number ,z:number) {
+export async function add_baseball(x: number, y: number ,z:number) {
     var ball_GLTF: any, ball_mesh: any;
 
     ball_GLTF = await loadModel('web/styles/baseball/baseball.glb');
